@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Nestora</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main>
+<div class="page-title">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+    <h1 style="font-size:2.4rem">Contact us</h1>
+    <p>Questions about sizing, delivery or renting? We are happy to help.</p>
+  </div>
+</div>
+
+<section style="padding-top:44px">
+  <div class="wrap contact-grid">
+    <div class="form-card">
+      <h2 style="font-size:1.5rem;margin-bottom:18px">Send us a message</h2>
+      <form id="contact-form" novalidate>
+        <div class="row2">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name"><div class="err"></div></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><div class="err"></div></div>
+        </div>
+        <div class="field"><label for="topic">Topic</label>
+          <select id="topic" name="topic" style="width:100%">
+            <option value="">Choose one...</option>
+            <option>Will it fit? Sizing help</option>
+            <option>Renting furniture</option>
+            <option>Delivery and assembly</option>
+            <option>Returns and warranty</option>
+            <option>Something else</option>
+          </select><div class="err"></div></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you need..."></textarea><div class="err"></div></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="note">Prototype only: this form does not send anything. It checks your entries and shows a confirmation.</p>
+      </form>
+      <div class="success" id="success" role="status">
+        <h3 style="margin-bottom:6px">Thanks, <span id="who"></span>!</h3>
+        <p>We have your message (reference <b id="ref"></b>). A real team would reply within one business day.</p>
+        <p style="margin-top:14px"><a href="products.html" class="btn btn-ghost btn-sm">Back to shop</a></p>
+      </div>
+    </div>
+
+    <aside class="info-card">
+      <h3 style="margin-bottom:18px">Get in touch</h3>
+      <div class="info-item"><div class="ico">&#9993;&#65039;</div><div><b>Email</b><span>hello@nestora.shop</span></div></div>
+      <div class="info-item"><div class="ico">&#128222;</div><div><b>Phone</b><span>1-800-555-0142 (imaginary)</span></div></div>
+      <div class="info-item"><div class="ico">&#128205;</div><div><b>Studio</b><span>123 Queen Street West<br>Toronto, ON (imaginary)</span></div></div>
+      <div class="info-item"><div class="ico">&#128339;</div><div><b>Hours</b><span>Mon to Fri, 9 am to 6 pm ET<br>Sat, 10 am to 4 pm ET</span></div></div>
+    </aside>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:820px">
+    <div class="section-head"><div class="eyebrow">Quick answers</div><h2>Frequently asked questions</h2></div>
+    <details><summary>How does renting work?</summary><p>Choose Rent on a product page and pay monthly. After three months you can cancel, swap to another item, or buy it at a reduced price.</p></details>
+    <details><summary>Will it fit through my door?</summary><p>Every product lists its dimensions. The sofa bed is built in sections and fits an 80 cm doorway. Use the fit checker on the shop page for floor space.</p></details>
+    <details><summary>How long does delivery take?</summary><p>Most orders arrive in 3 to 5 business days. Orders over $99 ship free, and assembly is available for an extra fee.</p></details>
+    <details><summary>What is your returns policy?</summary><p>You have 30 days to return an item. Returned items are refurbished and resold so they do not go to waste.</p></details>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

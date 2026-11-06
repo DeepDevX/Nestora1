@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Nestora</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="products">
+<div id="site-header"></div>
+<main>
+<div class="page-title">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Shop</div>
+    <h1 style="font-size:2.4rem">Shop compact furniture</h1>
+    <p>Everything here is sized for apartments, dorms and shared houses.</p>
+  </div>
+</div>
+
+<section style="padding-top:36px">
+  <div class="wrap">
+    <form class="fit-box" id="fit-form">
+      <div id="fit"><h3>Will it fit? Check your space</h3><p>Enter the floor space you have in centimetres.</p></div>
+      <div><label for="fit-w">Width (cm)</label><input id="fit-w" type="number" min="10" max="400" placeholder="e.g. 90"></div>
+      <div><label for="fit-d">Depth (cm)</label><input id="fit-d" type="number" min="10" max="400" placeholder="e.g. 40"></div>
+      <div style="display:flex;gap:8px"><button class="btn btn-primary btn-sm" type="submit">Check fit</button><button class="btn btn-ghost btn-sm" type="button" id="fit-clear">Clear</button></div>
+    </form>
+
+    <div class="shop-tools">
+      <div class="chips" id="chips"></div>
+      <label>Sort by <select id="sort">
+        <option value="featured">Featured</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+        <option value="rent">Rentable items only</option>
+      </select></label>
+    </div>
+    <p class="result-count" id="count" aria-live="polite"></p>
+    <div class="grid grid-4" id="grid"></div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
